@@ -5,7 +5,7 @@ import { useJobContext } from "../app/context/JobContext";
 
 export default function JobCard({ job }) {
     const { userSkills } = useJobContext()
-    
+
     // Calculate match score
     const calculateMatchScore = (requiredSkills, userSkills) => {
         const matchingSkills = requiredSkills.filter(skill => 
@@ -24,7 +24,7 @@ export default function JobCard({ job }) {
         <p className="text-sm md:text-base">{job.location}</p>
         <p className="text-sm md:text-base">{job.salary}</p>
         <MatchScoreBadge score={matchScore} />
-        <Link href={`/job/${job.id}`} className="block mt-2 text-teal-600">
+        <Link href={`/job/${job.id}`} className="block mt-2 text-teal-600 w-fit">
           View Details
         </Link>
       </div>
