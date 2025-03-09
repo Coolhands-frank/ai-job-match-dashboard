@@ -1,9 +1,6 @@
-//import Link from 'next/link';
-// import { CogIcon } from '@heroicons/react/24/solid';
 import UserProfile from './UserProfile';
 import UserSkills from "./UserSkills";
 import { ArrowLeft } from "lucide-react";
-//import Image from 'next/image';
 
 export default function ProfileDrawer({ isOpen, onClose }) {
     return (

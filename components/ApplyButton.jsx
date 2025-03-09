@@ -1,9 +1,9 @@
-"use client"; // ✅ This is a client component
+"use client";
 
 import { useJobContext } from "@/app/context/JobContext";
 
 export default function ApplyButton({ job }) {
-  const { userSkills } = useJobContext(); // Get user skills from context
+  const { userSkills } = useJobContext(); 
 
   // Find missing skills
   const missingSkills = job.requiredSkills.filter(skill => 

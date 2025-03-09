@@ -2,7 +2,6 @@
 import { useJobContext } from "../app/context/JobContext";
 import { WrenchScrewdriverIcon } from "@heroicons/react/24/solid";
 
- 
 export default function UserSkills({onClick}) {
 
     const { userSkills } = useJobContext()
@@ -18,7 +17,6 @@ export default function UserSkills({onClick}) {
 
                 {userSkills.map((skill, index) => (
                     <li key={index} 
-                    className = ""
                     >
                         <div className="flex items-center text-white">
                             <div className="mr-2 bg-teal-200 rounded-full w-2 h-2"></div>
