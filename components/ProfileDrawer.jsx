@@ -14,13 +14,26 @@ export default function ProfileDrawer({ isOpen, onClose }) {
             onClose(); // Close the sidebar if clicked outside
           }
         };
+
+        // Function to handle scrolling outside sidebar
+        const handleScrollOutside = (event) => {
+            if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+              onClose(); // Close sidebar when scrolling outside
+            }
+        };
     
         if (isOpen) {
-          document.addEventListener("mousedown", handleClickOutside);
+            document.addEventListener("mousedown", handleClickOutside); // Detect clicks
+            document.addEventListener("touchstart", handleClickOutside); // Detect taps (for mobile)
+            document.addEventListener("touchmove", handleScrollOutside); // Detect scrolling outside (for mobile)
+            document.addEventListener("scroll", handleScrollOutside, { passive: true }); // Detect scrolls (desktop)
         }
     
         return () => {
-          document.removeEventListener("mousedown", handleClickOutside);
+            document.removeEventListener("mousedown", handleClickOutside);
+            document.removeEventListener("touchstart", handleClickOutside);
+            document.removeEventListener("touchmove", handleScrollOutside);
+            document.removeEventListener("scroll", handleScrollOutside);
         };
     }, [isOpen, onClose]); // Runs only when isOpen changes
 
