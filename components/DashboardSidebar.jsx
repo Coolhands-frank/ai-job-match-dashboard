@@ -18,7 +18,7 @@ const DashboardSidebar = () => {
         <SideBar />
       </div>
 
-      <div className="md:hidden bg-teal-800 py-4 px-6 flex flex-row justify-between items-center">
+      <div className="md:hidden bg-teal-800 py-4 px-4 flex flex-row justify-between items-center">
         <div>
           <h1 className="font-bold text-xl">Job Match Dashboard</h1>
         </div>
