@@ -1,0 +1,54 @@
+[
+    {
+      "id": 1,
+      "title": "Frontend Developer",
+      "description": "We are looking for a skilled Front-End Developer to join our dynamic team. The ideal candidate will have a strong understanding of modern front-end technologies, excellent problem-solving skills, and a keen eye for design and user experience. You will work closely with designers, back-end developers, and product managers to create highly responsive, scalable, and user-friendly applications.",
+      "company": "Tech Corp",
+      "location": "Remote",
+      "salary": "$70,000 - $90,000",
+      "requiredSkills": ["react", "Next.js", "JavaScript", "Tailwind CSS"],
+      "matchScore": 90
+    },
+    {
+      "id": 2,
+      "title": "UI Engineer",
+      "company": "DesignPro",
+      "description": "We are seeking a talented UI Engineer to design and develop user interfaces that provide seamless and visually appealing experiences. The ideal candidate will have a deep understanding of front-end technologies, strong design intuition, and experience collaborating with product and engineering teams to build intuitive applications. As a UI Engineer, you will be responsible for implementing high-quality, responsive designs, optimizing performance, and ensuring accessibility compliance. If you have a passion for creating beautiful, functional user interfaces, we’d love to hear from you!",
+      "location": "New York, USA",
+      "salary": "$80,000 - $100,000",
+      "requiredSkills": ["Figma", "React", "CSS"],
+      "matchScore": 70
+    },
+    {
+        "id": 3,
+        "title": "UI/UX Designer",
+        "company": "CareerShiftng",
+        "description": "We are looking for a creative and detail-oriented UI/UX Designer to craft exceptional digital experiences. As a UI/UX Designer, you will be responsible for designing user-friendly, aesthetically pleasing interfaces and optimizing user interactions. You will collaborate closely with developers, product managers, and stakeholders to bring innovative ideas to life and ensure that our products meet the highest usability and design standards. If you have a passion for user-centered design, a keen eye for aesthetics, and the ability to turn complex problems into intuitive solutions, we’d love to hear from you!",
+        "location": "Remote",
+        "salary": "$80,000 - $100,000",
+        "requiredSkills": ["Figma", "Adobe XD", "Tailwind CSS", "Sketch"],
+        "matchScore": 80
+      },
+      {
+        "id": 4,
+        "title": "AI Engineer",
+        "company": "Gadutech",
+        "description": "We are seeking a highly skilled AI Engineer to develop and optimize cutting-edge artificial intelligence and machine learning models. As an AI Engineer, you will work closely with data scientists, software engineers, and product teams to design, build, and deploy intelligent systems that drive business innovation. You will be responsible for implementing AI models, fine-tuning algorithms, and ensuring the scalability and efficiency of AI-driven applications. If you have a passion for machine learning, deep learning, and data-driven problem-solving, we’d love to hear from you!",
+        "location": "New York, USA",
+        "salary": "$80,000 - $100,000",
+        "requiredSkills": ["C++", "Java", "python", "Postman"],
+        "matchScore": 60
+      },
+      {
+        "id": 5,
+        "title": "FullStack Developer",
+        "description": "We are looking for a skilled FullStack Developer to join our dynamic team. The ideal candidate will have a strong understanding of modern front-end technologies, excellent problem-solving skills, and a keen eye for design and user experience. You will work closely with designers, back-end developers, and product managers to create highly responsive, scalable, and user-friendly applications.",
+        "company": "Tech Corp",
+        "location": "Remote",
+        "salary": "$70,000 - $90,000",
+        "requiredSkills": ["Next.js", "React", "Figma", "JavaScript", "Tailwind CSS", "supabase", "ExpressJs", "python"],
+        "matchScore": 90
+      }
+         
+  ]
+  
