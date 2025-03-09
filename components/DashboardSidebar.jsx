@@ -20,7 +20,7 @@ const DashboardSidebar = () => {
 
       <div className="md:hidden bg-teal-800 py-4 px-6 flex flex-row justify-between items-center">
         <div>
-          <h1 className="font-bold">Job Match Dashboard</h1>
+          <h1 className="font-bold text-xl">Job Match Dashboard</h1>
         </div>
         
         <div className="cursor-pointer flex gap-1 items-center" onClick={handleProfileToggle}>
