@@ -1,16 +1,30 @@
 "use client"
-import { useJobContext } from "../../context/JobContext";
 import { notFound } from "next/navigation";
 import { useParams } from "next/navigation";
 import ApplyButton from "../../../components/ApplyButton";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
+import { useState, useEffect } from "react";
 
-export default function JobDetails({ params }) {
-  const { jobs } = useJobContext();
-  const { id } = useParams();
+export default function JobDetails() {
+  const { id } = useParams(); // gets job id from url
+  const [job, setJob] = useState(null);
+  const [loading, setLoading] = useState(true)
 
-  const job = jobs.find((j) => j.id === parseInt(id));
+  useEffect(() => {
+    // Fetch job data from local mock JSON file
+    fetch("/mockJobs.json")
+      .then((res) => res.json())
+      .then((data) => {
+        // Find the job by ID
+        const foundJob = data.find((job) => job.id.toString() === id);
+        setJob(foundJob);
+      })
+      .catch((error) => console.error("Error fetching job data:", error))
+      .finally(() => setLoading(false));
+  }, [id]);
+
+  if (loading) return <p>Loading...</p>;
 
   if (!job) return notFound();
 
